@@ -1,3 +1,10 @@
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('<%= image_path "banner_unsplash.jpg" %>')";>
+  <div class="container text-center">
+    <h1>Cocktails </h1>
+    <p>Create your own cocktails</p>
+    <a class="btn btn-primary" <%= link_to "Add a new cocktail", new_cocktail_path %></a>
+  </div>
+</div>
 <h1><%= @cocktail.name %></h1>
 <ul>
   <% @cocktail.doses.each do |dose| %>

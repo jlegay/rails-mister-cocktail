@@ -2,12 +2,11 @@
   <div class="container text-center">
     <h1>Cocktails </h1>
     <p>Create your own cocktails</p>
-    <a class="btn btn-primary" href="#">Add a cocktail</a>
+    <a class="btn btn-primary" <%= link_to "Add a new cocktail", new_cocktail_path %></a>
   </div>
 </div>
 
 <div class="container">
-  <h2>Cocktails</h2>
   <div class="cards-container">
     <% @cocktails.each do |cocktail| %>
       <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://images.unsplash.com/photo-1536935338788-846bb9981813?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&au)">
@@ -17,5 +16,5 @@
   </div>
 </div>
 
-<%= link_to "Add a new cocktail", new_cocktail_path %>
+
 
