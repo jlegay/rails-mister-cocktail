@@ -1,3 +1,34 @@
-h2 {
-  margin: 10px;
+h3 {
+  margin-top: 10px;
+}
+
+body {
+  text-align: center;
+}
+
+
+
+.btn {
+  background-color: rgb(27, 126, 246);
+  padding: 5px;
+  border-radius: 5px;
+
+}
+
+.far {
+  color: rgb(100, 100, 100);
+}
+
+.far:hover {
+  color: rgb(70, 70, 70);
+}
+
+.ingredients-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.show-cocktail-container {
+  width: 100vh;
+  margin: 20px;
 }
