@@ -1,7 +1,17 @@
-<h1>Cocktails</h1>
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('<%= image_path "banner_unsplash.jpg" %>')";>
+  <div class="container">
+    <h1>Cocktails </h1>
+    <p>Create your own cocktails</p>
+    <a class="btn btn-flat" href="#">Add a cocktail</a>
+  </div>
+</div>
+
+<h2>Cocktails</h2>
 <ul>
   <% @cocktails.each do |cocktail| %>
-      <%= link_to cocktail.name, coktail_path(cocktail) %>
+      <%= link_to cocktail.name, cocktail_path(cocktail) %>
   <% end %>
 </ul>
+
+<%= link_to "Add a new cocktail", new_cocktail_path %>
 
